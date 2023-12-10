@@ -22,7 +22,7 @@ We conduct experiments on several benchmark datasets, including CIFAR-10, NWPU-R
 Here we summarize all files present in this repo and their purpose.
 ```
 +-- mae/: code from Meta Research
-+-- torchrs/: necessary scripts to use AID and RESISC45 datasets
++-- torchrs/datasets/: necessary scripts to use AID and RESISC45 datasets
 +-- cls_data_loader.py: load CLS token datasets
 +-- cls_dataset.ipynb: create CLS token dataets from image datasets
 +-- cls_mlp.py: centralized model architecture
