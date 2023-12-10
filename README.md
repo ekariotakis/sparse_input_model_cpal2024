@@ -17,6 +17,26 @@ We conduct experiments on several benchmark datasets, including CIFAR-10, NWPU-R
 - We demonstrate that a single masked representation of each image during training suffices, eliminating the necessity for diverse random masks to be applied to inputs at each iteration and empowering the creation and preservation of significantly smaller datasets.
 - We evaluate our system across diverse image datasets, showcasing substantial performance enhancements, particularly in scenarios involving highly masked input images (50\% or more).
 
+## File Arrangement
+
+Here we summarize all files present in this repo and their purpose.
+```
++-- mae/: code from Meta Research
++-- torchrs/: necessary scripts to use AID and RESISC45 datasets
++-- cls_data_loader.py: load CLS token datasets
++-- cls_dataset.ipynb: create CLS token dataets from image datasets
++-- cls_mlp.py: centralized model architecture
++-- cls_mlp_example.ipynb: centralized training using image datasets
++-- ist_utils.py: utils for IST
++-- mlp.py: simple MLP architecture
++-- my_distributed_3layer.py: our IST model. Gets as input CLS token datsets
++-- resnet_dataset.ipynb: encode image datsets using resnet50
++-- run_cls_dataset.ipynb: centralized training using CLS token datasets
++-- run_my_ist.sh: run our IST implementation
++-- run_resnet_dataset.ipynb: centralized training using resnet50 encoded datasets 
++-- utils.ipynb: some general utils
+```
+
 ## Citing us
 If you find this work useful, please cite our paper.
 ```
